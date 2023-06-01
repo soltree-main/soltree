@@ -1,1 +1,2 @@
-# soltree
+# SolTree
+Source for SolTree web app
