@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsup ./sign-up/src",
-    "db-up": "docker run -d -p 27017:27017 --name test-mongo mongo:latest"
+    "build": "rm -rf ./dist && tsup",
+    "db-up": "docker run -d -p 27017:27017 --name test-mongo mongo:latest",
+    "deploy:sign-up": "zip -r deploy-sign-up.zip dist/sign-up"
   },
   "repository": {
     "type": "git",

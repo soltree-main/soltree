@@ -19,10 +19,6 @@ describe('sign-up', () => {
             password: '@Test123',
         }
 
-        const expected = {
-            'test': 1,
-        }
-
         const actual = await handler(event, mockContext);
 
         const body = JSON.parse(actual.body);
