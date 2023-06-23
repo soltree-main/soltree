@@ -7,7 +7,7 @@
     "test": "jest",
     "build": "rm -rf ./dist && tsup",
     "db-up": "docker run -d -p 27017:27017 --name test-mongo mongo:latest",
-    "deploy:sign-up": "zip -r deploy-sign-up.zip dist/sign-up"
+    "deploy:sign-up": "node deploy.js sign-up"
   },
   "repository": {
     "type": "git",
