@@ -1,6 +1,6 @@
 import { Context } from "aws-lambda";
-import { connectToDatabase } from "../../db";
-import { User } from "../../shared/types/user";
+import { connectToDatabase } from "../db";
+import { User } from "../shared/types/user";
 
 const transformAddUserEvent = (event: any): User | null => {
   // const body = JSON.parse(event);
